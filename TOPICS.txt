@@ -52,3 +52,17 @@
 
 11. Data sources  ==> used to query existing information from the provider
                   ==> it will pick the data dynamically during the run time [ pick the AMI ID from the existing resources]
+12. locals ==>  locals block can't be override the tfvars
+                ==> it can store the expressions too
+
+13. state management
+
+    => terraform is doing here declared/desired infra and actual infra
+    
+    desired/declared infra: It has been written all the .tf files and whatever user write in tf files, that is what user wants.
+    actual infra: what terraform is createing in provider
+
+    It always lokkup the [ desired/declared infra = actual infra ]
+    it always comare with state file and it will work accordingly resource creation
+
+terraform.tfstate: It is the file terraform creates to know what it is created. this is actual infra created by terraform
