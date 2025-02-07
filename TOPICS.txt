@@ -41,3 +41,5 @@
 8. output
 
 9. Interpolation ==> concatinating the two strings in terraform
+
+10. functions
