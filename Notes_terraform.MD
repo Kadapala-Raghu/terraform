@@ -2,8 +2,10 @@ Terraform Benifts
 =================>>>
 
 1.Version Control: 
+
     You can version control your infra.
 2.Restore:
+
     Easy to restore, if something goes wrong.
 3.Consitent Infrastructure:
     You can create same infra across all environments.
