@@ -1,0 +1,6 @@
+Requirements
+--------------
+    1. AWS Cli
+    2. Terraform software
+        Ref: https://developer.hashicorp.com/terraform/downloads
+    3. AWS access key and secret key details from AWS console
