@@ -1,7 +1,7 @@
 resource "aws_instance" "this" {
   ami                    = "ami-09c813fb71547fc4f" ## This AMI joindevops 
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  instance_type          = var.environment =="prod" ? "t3.small" : "t3.small"
+  instance_type          = var.environment =="prod" ? "t3.small" : "t3.micro"
 
                 ## above expression, we have defined the environment variable value "dev" in variables.tf so instance_type will be considering false stament i.e t3.micro
 
