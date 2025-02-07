@@ -1,0 +1,2 @@
+terraform init
+    -> To initializing the terraform
