@@ -1,3 +1,37 @@
 1. terraform definition
 2. Advantages of terraform
 3. resources
+
+                    ----commands---
+
+                    terraform init
+
+                    terraform plan
+
+                    terraform validate
+
+                    terraform apply | terraform apply -auto-approve
+
+                    terraform destroy -auto-approve
+
+                    terraform refresh
+
+                    terraform reconfigure
+
+
+
+                    -----------------------------
+
+4. Variable preferrence
+    1. command line variable   $ terraform apply -var "var_name=var_value"
+    2. tfvars
+    3. environment variables
+                $ export TF_VAR_var_name
+                $ unset TF_VAR_var_name
+    4. default
+    5. user prompt ( this means, if it did not find the variable value, it will ask at the command prompt)
+
+
+5. terraform.tfvars =>>>>>> It will help you to override the variable defined value in the file.
+
+6. conditions    ==> expression ? TRUE : FALSE
