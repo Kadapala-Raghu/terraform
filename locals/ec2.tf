@@ -5,7 +5,7 @@ resource "aws_instance" "this" {
 
   tags = {
     name    = local.name
-    Purpose = "terraform practice"
+    # Purpose = "terraform practice"
   }
 }
 
