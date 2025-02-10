@@ -65,4 +65,30 @@
     It always lokkup the [ desired/declared infra = actual infra ]
     it always comare with state file and it will work accordingly resource creation
 
-terraform.tfstate: It is the file terraform creates to know what it is created. this is actual infra created by terraform
+    terraform.tfstate: It is the file terraform creates to know what it is created. this is actual infra created by terraform
+
+14. remote state management
+        =>  Its important file and we need to secure it. and it Should be centralized.
+        
+        Advantages
+        ---------->
+        In collaboration environment, we must maintain state file remotely.
+        Locking also important so that we prevent parellel executions
+
+        Solution
+        -------->
+        To place the satefile in AWS S3
+        For locking, we have to use DynamoDB
+
+15. Daynamic Blocks
+        ==>  It is used to create multiple blocks inside the resources.
+
+16. for_each loop:
+        ==> mysql=t3.small
+        backend=t3.micro
+        frontend=t3.micro
+
+
+count => iterate lists []
+for_each => map
+dynamic blocks
