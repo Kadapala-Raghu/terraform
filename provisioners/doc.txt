@@ -1,0 +1,9 @@
+it is used to take action locally or remote when terraform created the servers
+
+two type of provisioners
+--------------------------
+
+local-exec : where terraform command is running that is local
+
+remote-exec : inside the server created by terraform
+

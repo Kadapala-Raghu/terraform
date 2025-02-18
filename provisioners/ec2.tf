@@ -8,11 +8,10 @@ resource "aws_instance" "this" {
     Purpose = "terraform practice"
     
   }
-
   provisioner "local-exec" {
-    command = "echo  ${self.private_ip} > inventory"
-    
-      }
+
+    command = "echo ${self.private_ip} > inventory"
+  }
 }
 
 resource "aws_security_group" "allow_tls" {
