@@ -1,13 +1,19 @@
-variable "ami_id" {
-    default = "ami-09c813fb71547fc4f"
-    
-}
-
-variable "instance_type" {
-    default = "t3.micro"
-  
-}
-
 variable "instances" {
-  default = ["mysql", "backend", "frontend"]
+    default = ["mysql", "backend", "frontend"]
+}
+
+variable "zone_id" {
+    default = "Z0720608U79R1SW06Z12"
+}
+
+variable "domain_name" {
+    default = "devopsyugam.site"
+}
+
+variable "common_tags" {
+    type = map
+    default = {
+        Project = "expense"
+        Environment = "dev"
+    }
 }
